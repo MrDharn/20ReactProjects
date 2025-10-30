@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* 
+:root{
+    --background: #ffff;
+    --text-primary: #0000;
+    --button-text: #ffff;
+    --button-bg: #000;
+}
+
+[data-theme = 'dark']{
+    --background: #0000;
+    --text-primary: #ffff;
+    --button-bg: #fff;
+    --button-text: #000;
+} */
+
+
+
+
+.light-dark-mode {
+    /* Meant for using data-theme */
+    /* background-color: var(--background);  
+    */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease, color 0.4s ease;
+  font-size: 20px;
+}
+
+
+.light-dark-mode.light {
+  background-color: #f7f7f7;
+  color: #222;
+}
+
+.light-dark-mode.dark {
+  background-color: #121212;
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
