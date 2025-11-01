@@ -8,6 +8,9 @@
     margin-bottom: 200px;
     background-color: gray;
 }
+.top-container h1{
+    padding: 15px;
+}
 .container{
     margin-top: 25px;
 }
