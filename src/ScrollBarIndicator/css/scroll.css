@@ -5,6 +5,11 @@
     width: 100%;
     text-align: center;
     background-color: #0000;
+    margin-bottom: 200px;
+    background-color: gray;
+}
+.container{
+    margin-top: 25px;
 }
 
 .scroll-progress-tracking-container{
