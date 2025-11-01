@@ -7,6 +7,8 @@ import DarkLightMode from "./DarkLightMode/components/DarkLightMode.jsx";
 import ScrollBar from "./ScrollBarIndicator/components/ScrollBar.jsx";
 import TabTest from "./CustomTabs/component/tabs.jsx";
 import ModalDisplay from "./ModalPopUp/component/ModalDisplay.jsx";
+import GithubProfileDisplay from "./githubProfilerFinder/GithubProfileDisplay.jsx";
+import GithubProfile from "./githubProfilerFinder/GithubProfile.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -16,6 +18,8 @@ createRoot(document.getElementById("root")).render(
 
       {/* <ScrollBar url='https://dummyjson.com/products/category/smartphones'/> */}
       {/* <TabTest/> */}
-      <ModalDisplay/>
+      {/* <ModalDisplay/> */}
+      <GithubProfile/>
+
   </StrictMode>
 );
