@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    min-height: 600px;
+}
+
+.heading{
+    display: flex;
+    gap: 5px;
+}
+
+.label{
+    background: gray;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.label:hover{
+    background: rgb(86, 81, 81);
+}
+
+.label.active{
+    background: rgb(37, 30, 30);
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.content{
+    color: red;
+}
