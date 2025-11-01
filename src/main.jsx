@@ -5,6 +5,7 @@ import {navData} from '../src/RecursiveNav/assets/navData.js'
 import QRcodeGenerator from "./QRcodeGenerator/components/QRcodeGenerator.jsx";
 import DarkLightMode from "./DarkLightMode/components/DarkLightMode.jsx";
 import ScrollBar from "./ScrollBarIndicator/components/ScrollBar.jsx";
+import TabTest from "./CustomTabs/component/tabs.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -12,6 +13,7 @@ createRoot(document.getElementById("root")).render(
       {/* <QRcodeGenerator/> */}
       {/* <DarkLightMode/> */}
 
-      <ScrollBar url='https://dummyjson.com/products/category/smartphones'/>
+      {/* <ScrollBar url='https://dummyjson.com/products/category/smartphones'/> */}
+      <TabTest/>
   </StrictMode>
 );
