@@ -6,6 +6,7 @@ import QRcodeGenerator from "./QRcodeGenerator/components/QRcodeGenerator.jsx";
 import DarkLightMode from "./DarkLightMode/components/DarkLightMode.jsx";
 import ScrollBar from "./ScrollBarIndicator/components/ScrollBar.jsx";
 import TabTest from "./CustomTabs/component/tabs.jsx";
+import ModalDisplay from "./ModalPopUp/component/ModalDisplay.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -14,6 +15,7 @@ createRoot(document.getElementById("root")).render(
       {/* <DarkLightMode/> */}
 
       {/* <ScrollBar url='https://dummyjson.com/products/category/smartphones'/> */}
-      <TabTest/>
+      {/* <TabTest/> */}
+      <ModalDisplay/>
   </StrictMode>
 );
