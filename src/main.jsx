@@ -10,6 +10,7 @@ import ModalDisplay from "./ModalPopUp/component/ModalDisplay.jsx";
 import GithubProfileDisplay from "./githubProfilerFinder/GithubProfileDisplay.jsx";
 import GithubProfile from "./githubProfilerFinder/GithubProfile.jsx";
 import SearchAutoComplete from "./SearchAutoComplete/SearchAutoComplete.jsx";
+import TicTacToe from "./TicTacToe/index.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -21,7 +22,8 @@ createRoot(document.getElementById("root")).render(
       {/* <TabTest/> */}
       {/* <ModalDisplay/> */}
       {/* <GithubProfile/> */}
-      <SearchAutoComplete/>
+      {/* <SearchAutoComplete/> */}
+      <TicTacToe/>
 
   </StrictMode>
 );
