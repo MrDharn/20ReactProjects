@@ -9,6 +9,7 @@ import TabTest from "./CustomTabs/component/tabs.jsx";
 import ModalDisplay from "./ModalPopUp/component/ModalDisplay.jsx";
 import GithubProfileDisplay from "./githubProfilerFinder/GithubProfileDisplay.jsx";
 import GithubProfile from "./githubProfilerFinder/GithubProfile.jsx";
+import SearchAutoComplete from "./SearchAutoComplete/SearchAutoComplete.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -19,7 +20,8 @@ createRoot(document.getElementById("root")).render(
       {/* <ScrollBar url='https://dummyjson.com/products/category/smartphones'/> */}
       {/* <TabTest/> */}
       {/* <ModalDisplay/> */}
-      <GithubProfile/>
+      {/* <GithubProfile/> */}
+      <SearchAutoComplete/>
 
   </StrictMode>
 );
