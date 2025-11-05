@@ -11,6 +11,10 @@ import GithubProfileDisplay from "./githubProfilerFinder/GithubProfileDisplay.js
 import GithubProfile from "./githubProfilerFinder/GithubProfile.jsx";
 import SearchAutoComplete from "./SearchAutoComplete/SearchAutoComplete.jsx";
 import TicTacToe from "./TicTacToe/index.jsx";
+import FeatureFlagGlobal from "./FeatureFlag/context/Context.jsx";
+import FeatureFlag from "./FeatureFlag/FeatureFlag.jsx";
+import UseFetchHookTest from "./useFetchCustomHook/UseFetchHookTest.jsx";
+import OnclickOutside from "./use-outside-click/OnclickOutside.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -23,7 +27,14 @@ createRoot(document.getElementById("root")).render(
       {/* <ModalDisplay/> */}
       {/* <GithubProfile/> */}
       {/* <SearchAutoComplete/> */}
-      <TicTacToe/>
+      {/* <TicTacToe/> */}
+
+      {/* <FeatureFlagGlobal>
+        <FeatureFlag/>
+      </FeatureFlagGlobal> */}
+
+      {/* <UseFetchHookTest/> */}
+      <OnclickOutside/>
 
   </StrictMode>
 );
