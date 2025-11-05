@@ -1,0 +1,89 @@
+.scroll-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.scroll-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.scroll-container h3 {
+  text-align: center;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+ul{   list-style: none;
+   margin: 0;
+   padding: 0;
+   position: initial;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background: transparent;
+   border-radius: 0;
+   border: none;
+   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.0);
+   max-height: initial;
+   overflow-y: initial;
+   z-index: 0;
+}
+.scroll-container .scroll-ul ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: white;
+  scroll-behavior: smooth;
+}
+.scroll-container .scroll-ul ul li {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s ease;
+}
+
+.scroll-container ul li:hover {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.scroll-btn {
+  display: block;
+  width: 80%;
+  margin: 20px auto;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.scroll-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.scroll-btn:active {
+  transform: scale(0.98);
+}
+
+.scroll-bottom {
+  text-align: center;
+  color: #444;
+  margin-top: 30px;
+  font-style: italic;
+}
