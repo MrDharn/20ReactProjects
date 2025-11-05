@@ -1,0 +1,55 @@
+/* Fix the navbar at the top */
+.nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #111;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+/* Style nav items */
+.nav-container nav li {
+  list-style: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-container nav li:hover {
+  color: #00bcd4;
+  transform: scale(1.1);
+}
+
+/* Give space below navbar so sections are not hidden */
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+/* Optional: Add smooth fade between sections */
+main h1 {
+  font-size: 4rem;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Small screen adjustments */
+@media (max-width: 600px) {
+  .nav-container {
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+}
