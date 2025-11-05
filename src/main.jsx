@@ -17,6 +17,7 @@ import UseFetchHookTest from "./useFetchCustomHook/UseFetchHookTest.jsx";
 import OnclickOutside from "./use-outside-click/OnclickOutside.jsx";
 import WindowResizeDisplay from "./window-resize/WindowResizeDisplay.jsx";
 import ScrollToTopAndBottom from "./scrollToTop/ScrollToTopAndBottom.jsx";
+import ScrollToSection from "./scrollToSection/ScrollToSection.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -39,7 +40,8 @@ createRoot(document.getElementById("root")).render(
       {/* <OnclickOutside/> */}
       {/* <WindowResizeDisplay/> */}
 
-      <ScrollToTopAndBottom/>
+      {/* <ScrollToTopAndBottom/> */}
+      <ScrollToSection/>
 
   </StrictMode>
 );
