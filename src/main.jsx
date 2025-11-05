@@ -18,6 +18,7 @@ import OnclickOutside from "./use-outside-click/OnclickOutside.jsx";
 import WindowResizeDisplay from "./window-resize/WindowResizeDisplay.jsx";
 import ScrollToTopAndBottom from "./scrollToTop/ScrollToTopAndBottom.jsx";
 import ScrollToSection from "./scrollToSection/ScrollToSection.jsx";
+import WeatherApi from "./WeatherForecast/WeatherApi.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -41,7 +42,8 @@ createRoot(document.getElementById("root")).render(
       {/* <WindowResizeDisplay/> */}
 
       {/* <ScrollToTopAndBottom/> */}
-      <ScrollToSection/>
+      {/* <ScrollToSection/> */}
+      <WeatherApi/>
 
   </StrictMode>
 );
