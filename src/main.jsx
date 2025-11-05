@@ -15,6 +15,8 @@ import FeatureFlagGlobal from "./FeatureFlag/context/Context.jsx";
 import FeatureFlag from "./FeatureFlag/FeatureFlag.jsx";
 import UseFetchHookTest from "./useFetchCustomHook/UseFetchHookTest.jsx";
 import OnclickOutside from "./use-outside-click/OnclickOutside.jsx";
+import WindowResizeDisplay from "./window-resize/WindowResizeDisplay.jsx";
+import ScrollToTopAndBottom from "./scrollToTop/ScrollToTopAndBottom.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -34,7 +36,10 @@ createRoot(document.getElementById("root")).render(
       </FeatureFlagGlobal> */}
 
       {/* <UseFetchHookTest/> */}
-      <OnclickOutside/>
+      {/* <OnclickOutside/> */}
+      {/* <WindowResizeDisplay/> */}
+
+      <ScrollToTopAndBottom/>
 
   </StrictMode>
 );
