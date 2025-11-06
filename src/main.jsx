@@ -1,6 +1,8 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import App from "./RecursiveNav/App.jsx";
+// import App from "./RecursiveNav/App.jsx";
+
+
 import {navData} from '../src/RecursiveNav/assets/navData.js'
 import QRcodeGenerator from "./QRcodeGenerator/components/QRcodeGenerator.jsx";
 import DarkLightMode from "./DarkLightMode/components/DarkLightMode.jsx";
@@ -19,31 +21,38 @@ import WindowResizeDisplay from "./window-resize/WindowResizeDisplay.jsx";
 import ScrollToTopAndBottom from "./scrollToTop/ScrollToTopAndBottom.jsx";
 import ScrollToSection from "./scrollToSection/ScrollToSection.jsx";
 import WeatherApi from "./WeatherForecast/WeatherApi.jsx";
-
+import { BrowserRouter } from "react-router-dom";
+import App from "./FoodRecipe/App.jsx";
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
-      {/* <App menus = {navData}/> */}
-      {/* <QRcodeGenerator/> */}
-      {/* <DarkLightMode/> */}
+  <BrowserRouter>
+  
+  
+      <StrictMode>
+          {/* <App menus = {navData}/> */}
+          {/* <QRcodeGenerator/> */}
+          {/* <DarkLightMode/> */}
 
-      {/* <ScrollBar url='https://dummyjson.com/products/category/smartphones'/> */}
-      {/* <TabTest/> */}
-      {/* <ModalDisplay/> */}
-      {/* <GithubProfile/> */}
-      {/* <SearchAutoComplete/> */}
-      {/* <TicTacToe/> */}
+          {/* <ScrollBar url='https://dummyjson.com/products/category/smartphones'/> */}
+          {/* <TabTest/> */}
+          {/* <ModalDisplay/> */}
+          {/* <GithubProfile/> */}
+          {/* <SearchAutoComplete/> */}
+          {/* <TicTacToe/> */}
 
-      {/* <FeatureFlagGlobal>
-        <FeatureFlag/>
-      </FeatureFlagGlobal> */}
+          {/* <FeatureFlagGlobal>
+            <FeatureFlag/>
+          </FeatureFlagGlobal> */}
 
-      {/* <UseFetchHookTest/> */}
-      {/* <OnclickOutside/> */}
-      {/* <WindowResizeDisplay/> */}
+          {/* <UseFetchHookTest/> */}
+          {/* <OnclickOutside/> */}
+          {/* <WindowResizeDisplay/> */}
 
-      {/* <ScrollToTopAndBottom/> */}
-      {/* <ScrollToSection/> */}
-      <WeatherApi/>
+          {/* <ScrollToTopAndBottom/> */}
+          {/* <ScrollToSection/> */}
+          {/* <WeatherApi/> */}
 
-  </StrictMode>
+          <App/>
+
+      </StrictMode>
+  </BrowserRouter>
 );
