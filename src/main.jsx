@@ -23,6 +23,7 @@ import ScrollToSection from "./scrollToSection/ScrollToSection.jsx";
 import WeatherApi from "./WeatherForecast/WeatherApi.jsx";
 import { BrowserRouter } from "react-router-dom";
 import App from "./FoodRecipe/App.jsx";
+import { FoodRecipeContextProvider } from "./FoodRecipe/context/FoodRecipeContext.jsx";
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
   
@@ -51,7 +52,9 @@ createRoot(document.getElementById("root")).render(
           {/* <ScrollToSection/> */}
           {/* <WeatherApi/> */}
 
-          <App/>
+            <FoodRecipeContextProvider>
+                <App />
+            </FoodRecipeContextProvider>
 
       </StrictMode>
   </BrowserRouter>
