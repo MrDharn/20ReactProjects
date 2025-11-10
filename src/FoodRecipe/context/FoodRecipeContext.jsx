@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const FoodRecipeContext = createContext(null);
 export const FoodRecipeContextProvider = ({ children }) => {
@@ -7,7 +8,7 @@ export const FoodRecipeContextProvider = ({ children }) => {
   const [error, setError] = useState(null);
   const [search, setSearch] = useState("");
   const [favoriteLists, setFavoriteList] = useState([]);
-
+  const navigate = useNavigate();
   async function handleSubmit(e) {
     e.preventDefault();
     try {
@@ -20,6 +21,7 @@ export const FoodRecipeContextProvider = ({ children }) => {
         setLoading(false);
         setRecipeData(result.data.recipes);
         setSearch('')
+        navigate('/')
       } 
     } catch (e) {
       setLoading(false);
