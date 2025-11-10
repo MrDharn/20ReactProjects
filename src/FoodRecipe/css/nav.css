@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.food-recipe-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.title h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ff6347; /* tomato accent */
+}
+
+form {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+form input {
+  width: 60%;
+  /* max-width: 400px; */
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+form input:focus {
+  border-color: #ff6347;
+  box-shadow: 0 0 6px rgba(255, 99, 71, 0.3);
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav-links a,
+.nav-links Link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links Link:hover {
+  color: #ff6347;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .food-recipe-nav {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 20px;
+    gap: 10px;
+  }
+
+  form {
+    width: 100%;
+    justify-content: center;
+  }
+
+  form input {
+    width: 90%;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title h3 {
+    font-size: 1.3rem;
+  }
+
+  form input {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
